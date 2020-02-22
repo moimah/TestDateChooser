@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dad.javafx.componentes.DateChooser?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" alignment="CENTER" prefHeight="432.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="373.0" prefWidth="400.0">
+         <children>
+            <DateChooser fx:id="dateChooserA" layoutX="141.0" layoutY="137.0" />
+            <Label layoutX="25.0" layoutY="14.0" text="Reservas: Hotel tentaciones">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSpanish" layoutX="231.0" layoutY="66.0" mnemonicParsing="false" onAction="#onActionSpanish" text="Español" />
+            <Button fx:id="btnEnglish" defaultButton="true" layoutX="300.0" layoutY="66.0" mnemonicParsing="false" onAction="#onActionEnglish" text="English" />
+            <Label layoutX="27.0" layoutY="71.0" prefHeight="17.0" prefWidth="198.0" text="Selecciona el idioma del datechooser" />
+            <Label layoutX="31.0" layoutY="154.0" prefHeight="17.0" prefWidth="87.0" text="Entrada / Entry" />
+            <DateChooser fx:id="dateChooserB" layoutX="141.0" layoutY="177.0" />
+            <Label layoutX="31.0" layoutY="194.0" prefHeight="17.0" prefWidth="87.0" text="Entrada / Entry" />
+            <Label fx:id="labelResult" layoutX="156.0" layoutY="279.0" prefHeight="33.0" prefWidth="198.0" text="No ha reservado" />
+            <Button fx:id="btnReservar" layoutX="156.0" layoutY="233.0" mnemonicParsing="false" onAction="#onActionBooking" text="Reservar / Booking" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
